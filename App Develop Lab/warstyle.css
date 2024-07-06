@@ -1,0 +1,63 @@
+body {
+    font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1adcc; /* Matched background color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f6e9d7; /* Lighter background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(203, 22, 203); /* Matched heading color */
+    font-family: "Sofia", sans-serif; /* Matched font */
+}
+
+form {
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(203, 22, 203); /* Matched button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8e0078; /* Darker hover color */
+}
+
+#uploadedOutfits {
+    margin-top: 20px;
+}
+
+.outfit {
+    display: inline-block;
+    margin: 10px;
+}
+
+.outfit img {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    border: 2px solid rgb(203, 22, 203); /* Matched border color */
+}
+
+.outfit img:hover {
+    border: 2px solid #8e0078; /* Darker border color on hover */
+}

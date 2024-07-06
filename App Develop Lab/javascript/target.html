@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeting & Selecting Elements</title>
+</head>
+<body>
+    <ul id="element">
+        <li class="list-item">First Element</li>
+        <li class="list-item">Second Element</li>
+        <li class="list-item">Third Element</li>
+    </ul>
+    <script>
+        //Navigating Elements by using ID
+        //console.log(element);
+        //element.style.background="red";
+
+        const ulTag=document.getElementById("element");
+        ulTag.style.backgroundColor="plum";
+        console.log(ulTag);
+
+        //Selecting element by class
+        const listTag=document.getElementsByClassName("list-item");
+        console.log(listTag);
+        console.log(document.getElementsByTagName("ul"));
+    </script>
+</body>
+</html>

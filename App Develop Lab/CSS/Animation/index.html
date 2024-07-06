@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*Below is an example for writing transitions*/
+            transition: width 5s,height 2s,border-radius 3s,background-color 2s;
+        }
+        .container:hover{
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

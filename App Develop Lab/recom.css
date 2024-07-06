@@ -1,0 +1,76 @@
+body {
+    /*background-color: rgb(224, 188, 224);*/
+    background-color: #d1adcc;
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+    color: rgb(203, 22, 203);
+}
+
+h1 {
+    font-style: oblique;
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    color: rgb(203, 22, 203);
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.para, .quiz {
+    font-style: oblique;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    color: rgb(218, 92, 218);
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+a {
+    color: rgb(203, 22, 203);
+}
+
+a:hover {
+    color: black;
+}
+
+/* Add these styles for the outfit recommendations part */
+.re {
+    text-align: center;
+    margin-top: 30px; /* Adjust as needed */
+}
+
+.category {
+    margin-bottom: 40px; /* Adjust as needed */
+}
+
+.outfit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outfit img {
+    max-width: 100%;
+    max-height: 400px; /* Adjust as needed */
+    border: 2px solid rgb(203, 22, 203);
+    border-radius: 10px;
+    margin: 0 10px; /* Adjust as needed */
+}
+
+button {
+    background-color: rgb(203, 22, 203);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(203, 22, 203);
+}

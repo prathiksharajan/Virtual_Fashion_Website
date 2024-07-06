@@ -1,0 +1,41 @@
+body{
+    /*background-color: rgb(224, 188, 224);*/
+    background-color: #d1adcc;
+}
+    
+h1{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+}
+i{
+    color: rgb(203, 22, 203);
+    /*color: #f6e9d7;*/
+}
+main a{
+    text-decoration: none;
+    color: rgb(203, 22, 203);
+    font-family: "Sofia", sans-serif;
+    font-style: normal;
+}
+main a:hover{
+    color: black;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+}
+img:hover{
+    border: 2px solid rgb(203, 22, 203)
+}
+#liner{
+    font-family: "Sofia", sans-serif;
+    font-style: oblique;
+    letter-spacing: 2px;
+}

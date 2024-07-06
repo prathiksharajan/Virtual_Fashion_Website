@@ -1,0 +1,13 @@
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solud rgb(224, 29, 224);
+    background-color: rgb(243, 193, 243);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Wardrobe</title>
+    <link rel="stylesheet" href="warstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Wardrobe</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="outfitImage" accept="image/*" required>
+            <button type="button" onclick="openCamera()">Open Camera</button>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="uploadedOutfits">
+            <!-- Uploaded outfits will be displayed here -->
+        </div>
+    </div>
+    <script src="warscript.js"></script>
+</body>
+</html>

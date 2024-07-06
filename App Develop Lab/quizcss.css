@@ -1,0 +1,89 @@
+
+body{
+    background-color: rgb(224, 188, 224);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+h1{
+    font-family:"Sofia", sans-serif;
+    text-align: center;
+}
+
+
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 100px;
+}
+th,td{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    padding: 15px;
+   
+}
+th{
+    font-family: "Sofia", sans-serif;
+    font-style: normal;
+    font-size: larger;
+    background-color: rgb(203,22,203);
+    color: black;
+}
+td{
+    font-family:"Sofia", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(203,22,203);
+}
+.container{
+    justify-content: center;
+}
+option{
+    color:rgb(203,22,203);
+
+}
+select{
+    color: rgb(203,22,203);
+    padding: 5px;
+    border: 1px solid rgb(203,22,203);
+    border-radius: 10px;
+    font-family: "Sofia", sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+.sbtn{
+    text-align: center;
+}
+button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(203,22,203);
+    color: white;
+    border: 1px solid rgb(203,22,203);
+    border-radius: 15px;
+    font-family: "Sofia", sans-serif;
+    font-size: large;
+}
+button:hover{
+    background-color: white;
+    color: rgb(203,22,203);
+}
+.nav{
+    background-color: rgb(203,22,203);
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    padding-right: 70px;
+    font-family: "Sofia", sans-serif;
+    font-size: large;
+}
+a:hover{
+    color: black;
+}

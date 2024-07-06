@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Third element</li>
+    </ul>
+    <script>
+        //Root Node
+        //Here document is an object attached with the window
+        //console.log(document.documentElement);//Used to access the root node
+        //Element node
+        //console.log(document.body);//Accessing the elements inside the html tag
+        //console.log(document.head);
+
+        //Childrens
+        //console.log(document.body.childNodes);//Accessing childrens of a node
+        //In the output, we are having text,ul,text,script
+        //The indentation is represented as text node
+        //If we want to see only the element nodes and avoid text and comment nodes,then use the children property
+        //console.log(document.body.children);
+
+        //gives the first node and last node
+        //console.log(document.body.firstChild);
+        //console.log(document.body.lastChild);
+
+        //If we want to see only the element nodes, use :
+        //console.log(document.body.firstElementChild);
+        //console.log(document.body.lastElementChild);
+
+        //HTML Collection is not an array, to traverse, make use of for-of loop
+        /*for(node of document.body.childNodes){
+            console.log(node);
+        }*/
+
+        //If we want to use array methods on html collection, then first convert it to an array
+        const childresOfBody=Array.from(document.body.children);
+        console.log(childresOfBody);
+
+        //Let's see siblings of an element
+        //Siblings - two properties - next sibling(returns the next element), previous sibling
+        const ulTag=document.body.children[0];
+        console.log(ulTag.nextSibling);
+        console.log(ulTag.nextElementSibling);
+
+        const firstLiTag=ulTag.children[0];
+        const secondLiTag=ulTag.children[1];
+        console.log(secondLiTag.previousElementSibling)
+
+
+
+        
+    </script>
+</body>
+</html>

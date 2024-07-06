@@ -1,0 +1,33 @@
+.flex-container{
+    display: flex;
+    border: 2px solid grey;
+    height: 45vh;
+    /*flex-direction: column-reverse;*/
+    justify-content: center; /*TO make the contents get displayed in the center*/
+    align-items:flex-start; /*TO align items in the center vertically*/
+    flex-wrap: wrap-reverse; /*Whenever the screen size changes, the items get wrapped and come under one after another*/
+
+}
+.flex-item{
+    background-color: plum;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    width: 122px;
+    height: 122px;
+}
+
+.item1{
+    order: 3;/*Item having a largest order comes at end*/
+    flex-grow: 3;/*Specifies the rate at which the item grows*/
+    flex-shrink: 2;/*Specifies the rate at which the item shrinks*/
+}
+
+.item3{
+    order: 6;
+    flex-grow: 6;
+}
+
+.item2{
+    align-self: center;
+}

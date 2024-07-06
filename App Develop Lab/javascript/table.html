@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>First ELement</li>
+        <li>Second ELement</li>
+        <li>Third ELement</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+            <td>five</td>
+        </tr>
+    </table> 
+    <script>
+        //Table DOM Manipulation
+        //console.log(document.documentElement);
+        //console.log(document.body.children);
+        const tableTag=document.body.children[1];
+        //tbody tag can be used multiple times, so that's why here we are using indexing for tbody, so in the first tbody tag, we are having how many trows, that is being displayed here
+        console.log(tableTag.tBodies[0].rows);
+        //to access cells inside the rows
+        console.log(tableTag.tBodies[0].rows[1].cells[1].textContent);
+        //We can even style that particular cell by using style property
+        console.log(tableTag.tBodies[0].rows[1].cells[1].style="background-color:blue");
+    </script>
+</body>
+</html>

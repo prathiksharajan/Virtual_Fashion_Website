@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="recom.css">
+    <title>Recommendations</title>
+    <script src="recom.js" defer></script>
+       
+</head>
+<body>
+    <h1 class="font-effect-shadow-multiple">Outfit Recommendations</h1>
+    <p class="para"><b>"Unlock your style potential with personalized outfit recommendations that blend fashion finesse and comfort seamlessly."</b></p>
+    <div class="quiz">
+        <p>Ready for a fashion adventure?Take our <a href="quiz.html">fashion quiz</a></p>
+    </div>
+    <div class="re">
+        <div class="category" id="category1">
+            <h2>Ethnic Wear</h2>
+            <div class="outfit">
+                <button onclick="changeImage('category1', -1)">Previous</button>
+                <img id="image1" src="category1_image1.jpg" alt="Outfit Image">
+                <button onclick="changeImage('category1', 1)">Next</button>
+            </div>
+        </div>
+        <div class="category" id="category2">
+            <h2>Tops</h2>
+            <div class="outfit">
+                <button onclick="changeImage('category2', -1)">Previous</button>
+                <img id="image2" src="category2_image1.jpg" alt="Outfit Image">
+                <button onclick="changeImage('category2', 1)">Next</button>
+            </div>
+        </div>
+        <div class="category" id="category3">
+            <h2>Dress</h2>
+            <div class="outfit">
+                <button onclick="changeImage('category3', -1)">Previous</button>
+                <img id="image3" src="category3_image1.jpg" alt="Outfit Image">
+                <button onclick="changeImage('category3', 1)">Next</button>
+            </div>
+        </div>
+        <div class="category" id="category4">
+            <h2>Pinteresty Collections</h2>
+            <div class="outfit">
+                <button onclick="changeImage('category4', -1)">Previous</button>
+                <img id="image4" src="category4_image1.jpg" alt="Outfit Image">
+                <button onclick="changeImage('category4', 1)">Next</button>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

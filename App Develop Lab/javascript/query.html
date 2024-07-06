@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body" >
+    <ul id="element" data="valid">
+        <li class="list-item">First element</li>
+        <li class="list-item">Second element</li>
+        <li class="list-item">Third element</li>
+    </ul>
+
+    <div id="firstDiv" class="allDivs">First Div</div>
+    <script>
+        //const allDivs=document.getElementsByClassName("allDivs"); //Pass by reference
+        //const allDivs=document.querySelectorAll(".allDivs"); //Pass by value
+        //console.log(allDivs);
+    </script>
+    <div class="allDivs">Second Div</div>
+    
+    <script>
+        //this selects only the first li tag element
+        //const listItems=document.querySelector('.list-item');
+        //console.log(listItems);
+
+        //if-want to select all elements having that class name,use:
+        //const listItems=document.querySelectorAll('ul > li:last-child');
+        //console.log(listItems[0].textContent);
+        //console.log(allDivs);
+
+        //Accessing attributes
+        //console.log(element.id); //works for predefined attributes
+        //console.log(element.getAttribute('data')); //works for user-defined attributes
+        //console.log(element.setAttribute('order-placed','pending')); //works for user-defined attributes
+        //console.log(element.getAttribute('order-placed')); //works for user-defined attributes
+        //console.log(element.hasAttribute('order-placed')); //works for user-defined attributes
+        //console.log(element.removeAttribute('order-placed')); //works for user-defined attributes
+        
+        //for - checking attributes of an element
+        //console.log(element.attributes);
+        //console.log(body.attributes);
+
+        //Creating and removing the node elements
+        const newDiv = document.createElement('div');
+        //newDiv.textContent="Hello World";
+
+        //inner-html used to add html code
+        /*newDiv.innerHTML=`<ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            </ul>`*/
+        //const newText = document.createTextNode('Hello World');
+        //append adds at the end, prepend adds at the beginning
+        //newDiv.appendChild(newText);
+        body.prepend(newDiv);
+
+        //before and after are also used
+       // body.after(newDiv);
+
+        //replace-with
+        //firstDiv.replaceWith(newDiv);
+
+        //remove
+        //firstDiv.remove();
+
+
+    </script>
+</body>
+</html>

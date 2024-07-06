@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="clickBtn">Click Me</button>
+
+    <script>
+        //Events
+        //clickBtn.onclick = function(){
+           // alert("Thanks for watching");
+        //}
+        function callMe(event){
+            console.log(event);
+            //console.log(event.type)
+           // console.log(event.currentTarget)
+            //console.log(event.clientY)
+            //console.log(event.clientX)
+            alert("Thanks for watching");
+        }
+        clickBtn.addEventListener('click',callMe);
+        clickBtn.addEventListener('click',function(){
+            alert("Thanks")
+        })
+        clickBtn.removeEventListener('click',callMe);
+        
+    </script>
+</body>
+</html>
